@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+/* PALETA DE COLORES
+    #E9E3DF --> gray
+    #FF7A30 --> orange
+    #000000 --> black
+*/
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html, body{
+    background-color:#E9E3DF;
+    overflow-x: auto; /* Permite scroll horizontal si es necesario */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px;
+}
+
+.container h1{
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size: 70px;
+    color: #c86028;
+}
+
+.apartado-superior{
+    margin:0rem 0rem 0rem 0rem;
+    width:100%;
+    text-align: center;
+    background-image:url(./img/2-cuadricula-negra.jpg)
+}
+
+.apartado-superior h1{
+    margin: 6rem 0rem 14px 0rem
+}
+
+.apartado-superior h2{
+    margin: 0px 0px 6rem 0px;
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size: 30px;
+    color: #c86028;
+}
+
+.antes-del-inicio{
+    margin:6rem 0rem 0rem 0rem;
+    display:flex;
+    flex-wrap:wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.antes-del-inicio p{
+    width:750px;
+    text-align:justify;
+    justify-content: justify;
+}
+
+.inicio{
+    margin:0rem; /*Sigue el sentido del reloj: arriba, derecha, abajo, izquierda*/
+    padding:0px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    background-color:#E9E3DF;
+    color:#000000;
+    flex-wrap: wrap; /* Permite que se apilen en pantallas pequeñas */
+    /* border: 1px solid black; */
+}
+
+/* Animación de corchetes iniciales */
+
+@keyframes oscilacion{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-170px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.imagen-corchete{
+    transform: translateY(0);
+    animation-name:oscilacion;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+
+    width:300px;
+    height:300px;
+}
+
+.inicio-caja-1{
+    margin:3rem 0rem 3rem 0rem;
+    height: 260px;
+    width: 420px;
+    padding: 10px;
+    text-align: justify;
+    justify-content:center;
+    /* border: 1px solid black; */
+}
+
+.inicio-caja-2{
+    margin-left: 30px;
+}
+
+.inicio-caja-2 img{
+    width: 290px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.titulo{
+    background-color:#E9E3DF;
+    text-align:center;
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size:30px;
+    color: #c86028;
+    width:100%;
+}
+
+.titulo h2 {
+    margin: 4rem 0px 2rem 0px;
+}
+
+.temas-vistos{
+    background-color:#E9E3DF;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.tema-visto{
+    margin:20px; 
+    margin-left:20px;
+    text-align: center;
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size: 2rem;
+
+}
+
+.seccion-1{
+    background-color: #E9E3DF;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
+    flex-direction:row;
+}
+
+.seccion-1-caja-1 {
+    width:515px;
+    height: 330px;
+    margin:20px 60px 5rem 60px;
+    padding:2rem;
+    overflow: visible;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: justify;
+    text-decoration:none;
+    text-align:justify;
+    list-style-type: none;
+    background-color: #000000;
+    color: #E9E3DF;
+}
+
+.seccion-1 ul {
+    list-style-type: none;
+    /* line-height: 1.8;  Sirve para aumentar el espacio de interlinea globalmente*/
+}
+
+.seccion-1 li {
+    margin-bottom: 20px;
+}
+
+.seccion-1-caja-1 h3 {
+    margin: 16px 5px 20px 5px;
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size: 2rem;
+    color:#c86028;
+}
+
+.seccion-2{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    width:100%;
+    background-image:url(./img/2-cuadricula-negra.jpg)
+}
+
+.seccion-2 h2{
+    margin: 5rem 0rem 1rem 0rem;
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size:60px;
+    color: #c86028;
+}
+
+.seccion-2-caja-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.seccion-2-caja-1__parrafo-1{
+    margin: 41px 20px 15px 20px;
+    padding: 30px;
+    width: 520px;
+    height: 278px;
+    text-align: justify;
+    background-color:#E9E3DF;  
+}
+
+.video{
+    width:620px; 
+    height:420px;
+    margin:0rem 0rem 0rem 0rem;
+}
+
+.seccion-2-caja-2{
+    margin:0px 0px 9rem 0px;
+    padding:0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.seccion-2-caja-2__parrafo-2{
+    margin: 0px 0px 2px 42px;
+    padding: 30px;
+    width: 518px;
+    height: 240px;
+    text-align: justify;
+    background-color:#E9E3DF;
+}
+
+#mapa-bogota{
+    margin:0px 20px 0px 18px;
+    width:620px;
+    height: 300px;
+    border: 3px solid #000000;
+}
+
+.seccion-3{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    background-color:#E9E3DF;
+    align-items:center;
+    justify-content: center;
+}
+
+.seccion-3 h2{
+    margin:5rem 0rem 2rem 0rem;
+    text-align:center;
+    justify-content: center;
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size:60px;
+    color: #c86028;
+    width:100%;
+}
+
+.seccion-3 p{
+    display:block;
+    margin:0px 0px 1rem 0px;
+    width:50rem;
+    text-align: justify;
+    justify-content: center;
+}
+
+.seccion-3-navegacion{
+    margin:0rem 0rem 8rem 0rem;
+    padding:0rem;
+    width:60rem;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.seccion-3 ul{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+
+.seccion-3 li{
+    margin:10px;
+    width:150px;
+    height:150px;
+    padding:0px;
+    display:block; /* Hace actuar el LI como si fuera un contenedor/block*/
+    text-align:center;
+    font-size:15px;
+    line-height:9rem;
+    border:1px solid black;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.seccion-3 a{
+    display:block; /*Esto genera que A ocupe todo el espacio del LI y se pueda seleccionar incluso fuera del cuadro*/
+    width:100%;
+    height:100%;
+    border-radius:8px;
+    text-decoration:none;
+    color:#000000;
+    transition:1s;
+}
+
+.seccion-3 a:hover {
+    color:white;
+    background-color:#000000;
+}
+
+.seccion-3 a:hover {
+    transform:scale(1,1);
+}
+
+/* Seccion de contacto */
+
+.seccion-4{
+    margin:0px 0px 1rem 0px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+    background-image:url(./img/2-cuadricula-negra.jpg);
+}
+
+.seccion-4 h2{
+    margin:5rem 0rem 1rem 0rem;
+    text-align:center;
+    justify-content: center;
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size:60px;
+    color: #c86028;
+    width:100%;
+}
+
+.seccion-4 p {
+    margin:0px 0px 0px 0px;
+    font-weight: bold;
+    font-family:30px;
+    color:#E9E3DF;
+    border-radius:10px;
+}
+
+.seccion-4-contacto {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+}
+
+.seccion-4-contacto img{
+    margin:3rem 5rem 8rem 0rem;
+    width:525px;
+    height:590px;
+    border:1px solid white;
+    border-radius:10px;
+}
+
+.seccion-4-content {
+    margin:3rem 0px 8rem 0px;
+    padding:20px;
+    height:550px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border:1px solid white;
+    border-radius:10px;
+    flex-wrap:wrap;
+}
+
+.seccion-4-content h3{
+    margin-top:1rem 0rem 1rem 0rem;
+    color:white;
+    font-family:"Bitcount Prop Single", system-ui;
+}
+
+.seccion-4-content li {
+    margin:10px;
+    width:300px;
+    height:100px;
+    display:block;
+    flex-direction:row;
+    align-items:center;
+    background-color:#E9E3DF;
+    list-style:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.7s;
+}
+
+.seccion-4-content li:hover{
+    background-color:#c5c1bf
+}
+
+.seccion-4-content a{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:100%;
+    font-size:30px;
+    text-align:center;
+    color:#000000;
+    text-decoration:none;
+    transition: 0.7s;
+}
+
+.seccion-4-content img{
+    margin:30px 10px 0px 25px;
+    padding:0px;
+    border:0px;
+    width:3rem;
+    height:3rem;
+}
+
+.seccion-4-content span{
+    margin:30px 0px 0px 20px;
+}
+
+.seccion-4-content a:hover{
+    color:#c86028
+}
+
+/* Footer */
+
+.footer{
+    margin:0rem 0px 3rem 0rem;
+    width:100%;
+}
+
+.footer-1{
+    margin:0rem 0px 2rem 3rem;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    text-align:left;
+    justify-content:left;
+    background-color: #E9E3DF;
+}
+
+.span-santiagoencodigo {
+    color:#c86028;
+    font-family:"Bitcount Prop Single", system-ui;
+    font-size:2rem;
+}
+
+.span-perfil-laboral {
+    font-size:1rem;
+    margin:0px 0px 0px 0px;
+}
+
+.small{
+    margin: 0px 0px 0px 0px;
+    width:100%;
+    align-items: center;
+    text-align: center;
+    border-top:1px solid #c86028;
+    padding:1rem 0rem 0rem 0rem;
+    font-size:1,2rem;
+}
+
+
+
+
