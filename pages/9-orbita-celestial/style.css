@@ -1,0 +1,81 @@
+body{
+    margin:0px;
+    background-color:black;
+    overflow:hidden;
+}
+
+.system{
+    position:relative;
+    width:100vw; /*Vie width*/
+    height:100vh; /*Vie heigth*/
+}
+
+.sun{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 60px;
+    height:60px;
+    margin:-30px 0 0 -30px;
+    background-color: yellow;
+    border-radius:50%;
+    box-shadow: 0 0 30px yellow;
+}
+
+.earth-orbit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:300px;
+    height:300px;
+    margin: -150px 0 0 -150px;
+    border: 1px solid gray;
+    border-radius:50%;
+    animation:rotate-earth 36.5s linear infinite;
+}
+
+.earth{
+    position:absolute;
+    top:50%;
+    left:100%;
+    width:20px;
+    height:20px;
+    margin: -10px 0 0 -10px;
+    background-color:cyan;
+    border-radius:50%;
+}
+
+.moon-orbit{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:60px;
+    height:60px;
+    margin: -30px 0 0 -30px;
+    border:1px solid gray;
+    border-radius:50%;
+    animation:rotate-moon 36.5s linear infinite;
+}
+
+.moon{
+    position:absolute;
+    top:50%;
+    left:100%;
+    width:8px;
+    height:8px;
+    margin: -4px 0 0 -4px;
+    background-color:white;
+    border-radius:50%;
+}
+/* ANIMACIONES */
+
+@keyframes rotate-earth{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+
+@keyframes rotate-moon{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+

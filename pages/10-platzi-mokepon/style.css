@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+
+:root{
+    --main-color: #E9E3DF;
+    --neo-color-white: #ffffff;
+    --shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    --webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1); 
+    --moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: var(--main-color);
+    min-block-size: 100vh;
+    font-family: 'Oswald', sans-serif;  
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box
+}
+
+.titulo{
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#seleccionar_mascota{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-mascota{
+    width: 70px;
+}
+
+#seleccionar_mascota > div{
+    display: flex;
+}
+
+.tarjeta{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius:10px;
+    margin-top: 10px;
+    transition: box-shadow .5s ease;
+}
+
+.tarjeta:hover{
+    box-shadow: var(--shadow);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#seleccionar_mascota > div:nth-child(2) > label:nth-child(1){
+    background-color: var(--neo-color-white);
+}
+
+#seleccionar_mascota > div:nth-child(3) > label:nth-child(1){
+    background-color: var(--neo-color-white);
+}
+
+#seleccionar_mascota > div:nth-child(4) > label:nth-child(1){
+    background-color: var(--neo-color-white);
+}
+
+.btn-seleccion{
+    width: 200px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    transition: box-shadow 1s ease;
+}
+
+.btn-seleccion:hover{
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transform: scale(1.1);
+}
+
+.btn-seleccion:active{
+    background-color:black;
+    color:white;
+}
+
+.btn-seleccion-ataque{
+    width: 200px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    transition: box-shadow 1s ease;
+}
+
+.btn-seleccion-ataque:hover{
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.btn-seleccion-ataque:active{
+    background-color:black;
+    color:white;
+}
+
+.elije_ataque{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    font-size: 20px;
+}
+
+#seleccionar_ataque{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#seleccionar_ataque .btn-box{
+    display: flex;
+    flex-direction: column; 
+}
+
+.btn-box .titulo-btn-ataque{
+    margin: 0;
+}
+
+#mensajes{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    box-shadow: var(--shadow);
+    padding: 30px;
+    margin: 0 50px 0 0;
+    background-color: #ffffff;
+    border: 2px solid black;
+    height: 65vh;
+    overflow-y: scroll;
+}

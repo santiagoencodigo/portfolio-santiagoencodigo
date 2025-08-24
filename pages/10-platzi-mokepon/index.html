@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon</title>
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">MOKEPON 🔥 💧 🌱</h1>
+    <section id="seleccionar_mascota">
+        <h2>Elije tu mascota:</h2>
+                <div>      
+                    <label class="tarjeta" for="hipodoge"><img class="img-mascota" src="./assets/mokepons_mokepon_hipodoge_attack.png" alt=""> Hipodoge🐘</label>
+                    <input type="radio" name="mascota" id="hipodoge">
+                </div>
+                
+                <div>
+                    <label class="tarjeta" for="capipepo"><img class="img-mascota" src="./assets/mokepons_mokepon_capipepo_attack.png" alt=""> Capipepo🦔</label>
+                    <input type="radio" name="mascota" id="capipepo">
+                </div>
+                
+                <div>
+                    <label class="tarjeta" for="ratigueya"> <img class="img-mascota" src="./assets/mokepons_mokepon_ratigueya_attack.webp" alt=""> Ratigueya🦝</label>
+                    <input type="radio" name="mascota" id="ratigueya">
+                </div>     
+        <button class="btn-seleccion" id="btn-seleccion">Seleccionar</button>
+    </section>
+    <span class="elije_ataque">
+        <section id="seleccionar_ataque">
+            <div>
+                <p><span id="name-player"></span> <span id="lives-player" >🤍🤍🤍</span> </p>
+                <p><span id="name-enemy"></span> <span id="lives-enemy" >🖤🖤🖤</span> </p>
+            </div>
+
+            <div class="btn-box">
+                <h2 class="titulo-btn-ataque">Elije tu ataque:</h2>
+                <button class="btn-seleccion-ataque" id="btn-fuego">Fuego🔥</button>
+                <button class="btn-seleccion-ataque" id="btn-agua">Agua💧</button>
+                <button class="btn-seleccion-ataque" id="btn-tierra">Tierra🌱</button>
+                <section id="reiniciar">
+                    <button class="btn-seleccion" id="btn-reset">Reiniciar 🔄</button>
+                </section>
+            </div>
+        </section>
+        <section id="mensajes"></section>  
+    </span>
+</body>
+</html>
